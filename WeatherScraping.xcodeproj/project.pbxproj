@@ -17,6 +17,7 @@
 		685EB74B2090DE4100C6E80E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB74A2090DE4100C6E80E /* Weather.swift */; };
 		685EB74E2090DEC200C6E80E /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */; };
 		685EB7502090DED500C6E80E /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */; };
+		685EB7532090E2F900C6E80E /* WebScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB7522090E2F900C6E80E /* WebScraping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		685EB74A2090DE4100C6E80E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
+		685EB7522090E2F900C6E80E /* WebScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				685EB73A2090C6A800C6E80E /* Veiws */,
 				685EB7392090C6A200C6E80E /* Controllers */,
 				685EB7382090C69A00C6E80E /* Extensions */,
+				685EB7512090E2B900C6E80E /* Utilities */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -142,6 +145,14 @@
 				685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		685EB7512090E2B900C6E80E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				685EB7522090E2F900C6E80E /* WebScraping.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +248,7 @@
 				685EB7272090C5FA00C6E80E /* ViewController.swift in Sources */,
 				685EB73D2090C70500C6E80E /* UIView.swift in Sources */,
 				685EB7252090C5FA00C6E80E /* AppDelegate.swift in Sources */,
+				685EB7532090E2F900C6E80E /* WebScraping.swift in Sources */,
 				685EB7492090DD3600C6E80E /* ScrapingView.swift in Sources */,
 				685EB74B2090DE4100C6E80E /* Weather.swift in Sources */,
 			);
