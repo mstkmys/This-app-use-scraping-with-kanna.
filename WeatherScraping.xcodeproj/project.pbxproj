@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		685EB7252090C5FA00C6E80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB7242090C5FA00C6E80E /* AppDelegate.swift */; };
 		685EB7272090C5FA00C6E80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB7262090C5FA00C6E80E /* ViewController.swift */; };
-		685EB72A2090C5FA00C6E80E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685EB7282090C5FA00C6E80E /* Main.storyboard */; };
 		685EB72C2090C5FB00C6E80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685EB72B2090C5FB00C6E80E /* Assets.xcassets */; };
 		685EB72F2090C5FB00C6E80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685EB72D2090C5FB00C6E80E /* LaunchScreen.storyboard */; };
+		685EB73D2090C70500C6E80E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB73C2090C70500C6E80E /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		685EB7212090C5FA00C6E80E /* WeatherScraping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherScraping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		685EB7242090C5FA00C6E80E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		685EB7262090C5FA00C6E80E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		685EB7292090C5FA00C6E80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		685EB72B2090C5FB00C6E80E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685EB72E2090C5FB00C6E80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		685EB7302090C5FB00C6E80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		685EB73C2090C70500C6E80E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,62 @@
 		685EB7232090C5FA00C6E80E /* WeatherScraping */ = {
 			isa = PBXGroup;
 			children = (
-				685EB7242090C5FA00C6E80E /* AppDelegate.swift */,
-				685EB7262090C5FA00C6E80E /* ViewController.swift */,
-				685EB7282090C5FA00C6E80E /* Main.storyboard */,
-				685EB72B2090C5FB00C6E80E /* Assets.xcassets */,
-				685EB72D2090C5FB00C6E80E /* LaunchScreen.storyboard */,
+				685EB7372090C67E00C6E80E /* Resources */,
+				685EB7362090C67700C6E80E /* Classes */,
 				685EB7302090C5FB00C6E80E /* Info.plist */,
 			);
 			path = WeatherScraping;
+			sourceTree = "<group>";
+		};
+		685EB7362090C67700C6E80E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				685EB7242090C5FA00C6E80E /* AppDelegate.swift */,
+				685EB73B2090C6B100C6E80E /* Models */,
+				685EB73A2090C6A800C6E80E /* Veiws */,
+				685EB7392090C6A200C6E80E /* Controllers */,
+				685EB7382090C69A00C6E80E /* Extensions */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		685EB7372090C67E00C6E80E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				685EB72B2090C5FB00C6E80E /* Assets.xcassets */,
+				685EB72D2090C5FB00C6E80E /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		685EB7382090C69A00C6E80E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				685EB73C2090C70500C6E80E /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		685EB7392090C6A200C6E80E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				685EB7262090C5FA00C6E80E /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		685EB73A2090C6A800C6E80E /* Veiws */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Veiws;
+			sourceTree = "<group>";
+		};
+		685EB73B2090C6B100C6E80E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +172,6 @@
 			files = (
 				685EB72F2090C5FB00C6E80E /* LaunchScreen.storyboard in Resources */,
 				685EB72C2090C5FB00C6E80E /* Assets.xcassets in Resources */,
-				685EB72A2090C5FA00C6E80E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685EB7272090C5FA00C6E80E /* ViewController.swift in Sources */,
+				685EB73D2090C70500C6E80E /* UIView.swift in Sources */,
 				685EB7252090C5FA00C6E80E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		685EB7282090C5FA00C6E80E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				685EB7292090C5FA00C6E80E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		685EB72D2090C5FB00C6E80E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -213,7 +253,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -283,6 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = WeatherScraping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.WeatherScraping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,6 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
 				INFOPLIST_FILE = WeatherScraping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.WeatherScraping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
