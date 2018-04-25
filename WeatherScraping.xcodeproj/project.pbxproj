@@ -18,6 +18,7 @@
 		685EB74E2090DEC200C6E80E /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */; };
 		685EB7502090DED500C6E80E /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */; };
 		685EB7532090E2F900C6E80E /* WebScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB7522090E2F900C6E80E /* WebScraping.swift */; };
+		685EB7552090EEC100C6E80E /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685EB7542090EEC100C6E80E /* SVProgressHUD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 		685EB7522090E2F900C6E80E /* WebScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraping.swift; sourceTree = "<group>"; };
+		685EB7542090EEC100C6E80E /* SVProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SVProgressHUD.framework; path = Carthage/Build/iOS/SVProgressHUD.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685EB7552090EEC100C6E80E /* SVProgressHUD.framework in Frameworks */,
 				685EB7472090D8C000C6E80E /* Kanna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +136,7 @@
 		685EB7422090CE9900C6E80E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				685EB7542090EEC100C6E80E /* SVProgressHUD.framework */,
 				685EB7462090D8C000C6E80E /* Kanna.framework */,
 			);
 			name = Frameworks;
@@ -230,6 +234,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SVProgressHUD.framework",
 			);
 			outputPaths = (
 			);

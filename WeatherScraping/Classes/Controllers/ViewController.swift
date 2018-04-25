@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class ViewController: UIViewController {
     
@@ -43,6 +44,9 @@ class ViewController: UIViewController {
     }
     
     private func executed() {
+        SVProgressHUD.setDefaultAnimationType(.native)
+        SVProgressHUD.setDefaultMaskType(.black)
+        SVProgressHUD.show(withStatus: "東京の天気を取得しています...")
         let group = DispatchGroup()
         let queue1 = DispatchQueue(label: "jp.mstk.queue1")
         let queue2 = DispatchQueue(label: "jp.mskt.queue2")
@@ -58,6 +62,7 @@ class ViewController: UIViewController {
         }
         group.notify(queue: DispatchQueue.main) {
             self.finalDataArray = self.yesterdayDataArray + self.todayDataArray
+            SVProgressHUD.dismiss(withDelay: 2)
         }
     }
 
