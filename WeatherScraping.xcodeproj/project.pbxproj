@@ -12,6 +12,11 @@
 		685EB72C2090C5FB00C6E80E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685EB72B2090C5FB00C6E80E /* Assets.xcassets */; };
 		685EB72F2090C5FB00C6E80E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 685EB72D2090C5FB00C6E80E /* LaunchScreen.storyboard */; };
 		685EB73D2090C70500C6E80E /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB73C2090C70500C6E80E /* UIView.swift */; };
+		685EB7472090D8C000C6E80E /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 685EB7462090D8C000C6E80E /* Kanna.framework */; };
+		685EB7492090DD3600C6E80E /* ScrapingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB7482090DD3600C6E80E /* ScrapingView.swift */; };
+		685EB74B2090DE4100C6E80E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB74A2090DE4100C6E80E /* Weather.swift */; };
+		685EB74E2090DEC200C6E80E /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */; };
+		685EB7502090DED500C6E80E /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		685EB72E2090C5FB00C6E80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		685EB7302090C5FB00C6E80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		685EB73C2090C70500C6E80E /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		685EB7462090D8C000C6E80E /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
+		685EB7482090DD3600C6E80E /* ScrapingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrapingView.swift; sourceTree = "<group>"; };
+		685EB74A2090DE4100C6E80E /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
+		685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685EB7472090D8C000C6E80E /* Kanna.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				685EB7232090C5FA00C6E80E /* WeatherScraping */,
 				685EB7222090C5FA00C6E80E /* Products */,
+				685EB7422090CE9900C6E80E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +113,8 @@
 		685EB73A2090C6A800C6E80E /* Veiws */ = {
 			isa = PBXGroup;
 			children = (
+				685EB74C2090DEAA00C6E80E /* Cells */,
+				685EB7482090DD3600C6E80E /* ScrapingView.swift */,
 			);
 			path = Veiws;
 			sourceTree = "<group>";
@@ -108,8 +122,26 @@
 		685EB73B2090C6B100C6E80E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				685EB74A2090DE4100C6E80E /* Weather.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		685EB7422090CE9900C6E80E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				685EB7462090D8C000C6E80E /* Kanna.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		685EB74C2090DEAA00C6E80E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				685EB74D2090DEC200C6E80E /* WeatherTableViewCell.xib */,
+				685EB74F2090DED500C6E80E /* WeatherTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +154,7 @@
 				685EB71D2090C5FA00C6E80E /* Sources */,
 				685EB71E2090C5FA00C6E80E /* Frameworks */,
 				685EB71F2090C5FA00C6E80E /* Resources */,
+				685EB7442090CE9E00C6E80E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -171,20 +204,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				685EB72F2090C5FB00C6E80E /* LaunchScreen.storyboard in Resources */,
+				685EB74E2090DEC200C6E80E /* WeatherTableViewCell.xib in Resources */,
 				685EB72C2090C5FB00C6E80E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		685EB7442090CE9E00C6E80E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Kanna.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		685EB71D2090C5FA00C6E80E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685EB7502090DED500C6E80E /* WeatherTableViewCell.swift in Sources */,
 				685EB7272090C5FA00C6E80E /* ViewController.swift in Sources */,
 				685EB73D2090C70500C6E80E /* UIView.swift in Sources */,
 				685EB7252090C5FA00C6E80E /* AppDelegate.swift in Sources */,
+				685EB7492090DD3600C6E80E /* ScrapingView.swift in Sources */,
+				685EB74B2090DE4100C6E80E /* Weather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +376,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WeatherScraping/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,6 +389,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.WeatherScraping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Modules";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -341,6 +401,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WDFA67X5D5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
 				INFOPLIST_FILE = WeatherScraping/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.mstk.WeatherScraping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Modules";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
